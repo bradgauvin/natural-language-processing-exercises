@@ -19,7 +19,7 @@ urls = ['https://codeup.com/data-science/jobs-after-a-coding-bootcamp-part-1-dat
         'https://codeup.com/data-science/data-science-without-a-degree/']
 
 
-def get_blog_articles(urls,headers):
+def get_blogs(urls,headers):
     '''
     Given a list of URLs of Codeup blog articles, returns a list of dictionaries containing the url, blog title and blog content.
     '''
@@ -45,7 +45,7 @@ def get_blog_articles(urls,headers):
         df.to_csv(filename, index=False)
         return df
 
-def get_news_articles(topics,headers):
+def get_news(topics,headers):
     '''
     Given a list of news topics, retrieve the title and content for all articles in that inshorts topic.
     '''
